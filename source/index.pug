@@ -1,11 +1,23 @@
 extends modules/layout/layout.pug
 block head
 block header
-  h1 tao la header
+  header.header
+    .left
+      .logo
+        img(src="images/logo.png")
+    .right
+      .top
+        .dropdown.show
+          a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+            | Dropdown link
+          .dropdown-menu(aria-labelledby='dropdownMenuLink')
+            a.dropdown-item(href='#') Action
+            a.dropdown-item(href='#') Another action
+            a.dropdown-item(href='#') Something else here
 block content
   h2 tao la content
 block footer
-  h3 tao la footer
-  script(src='js/extention/jquery-3.3.1.min.js')
-  script(src='js/extention/bootstrap.min.js')
-  script(src='js/extention/slick.min.js')
+
+block script
+  h1 cuong
+  
