@@ -1,0 +1,159 @@
+extends modules/layout/layout.pug
+append head
+append header
+append content
+  //- slide
+  section.top-section.hbb
+    img.bgb(src="images/bg-brown-bot.png")
+    .slide.slide-detail
+      .item-slide(style='background-image: url(images/s04.png)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title HAN COFFEE STANDARD
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+      .item-slide(style='background-image: url(images/s01.png)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title HAN COFFEE STANDARD
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+    button.btn-next-section
+      img(src="images/icon-next-section.png")
+  //- our coffee
+  section#next-section.how-it-work
+    .bit-left
+      img(src="images/bit-left.png")
+    .bit-right
+      img(src="images/bit-right.png")
+    .container
+      .row
+        .title-wrap
+          h2.title HOW IT WORKS
+          h4.title Han Coffee Standard
+          img(src="images/seperator-brown.png")
+        .desc.text-center
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .how-it-work-wrap
+          .how-it-work-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x297")
+            .desc-product
+              h3  Espresso
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+          .how-it-work-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x297")
+            .desc-product
+              h3  Filter
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          .how-it-work-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x297")
+            .desc-product
+              h3  Cafetiere
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+  //- product
+  section.product-white.htb
+    img.bgt(src="images/bg-brown-top.png")
+    .container
+      .row
+        .col-md-6
+          .img-product-wrap
+            img(src="images/gp.png")
+        .col-md-6
+          .row
+            .inner
+              .title-wrap
+                h2.title ARABICA BEANS
+                h4.title Han Coffee Standard
+                img(src="images/seperator-brown.png")
+              .desc
+                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              .text-center
+                a.btn-gcolor(href="#") View more
+  //- product
+  section.product-brown
+    .container
+      .row
+        .col-md-6
+          .row
+            .inner
+              .title-wrap
+                h2.title ROBUSTA BEANS
+                h4.title Han Coffee Standard
+                img(src="images/seperator-brown.png")
+              .desc
+                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              .text-center
+                a.btn-gcolor(href="#") View more
+        .col-md-6
+          .img-product-wrap
+            img(src="images/gp.png")
+  //- product
+  section.product-white
+    .container
+      .row
+        .col-md-6
+          .img-product-wrap
+            img(src="images/gp.png")
+        .col-md-6
+          .row
+            .inner
+              .title-wrap
+                h2.title ROBUSTA POWDER
+                h4.title Han Coffee Standard
+                img(src="images/seperator-brown.png")
+              .desc
+                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              .text-center
+                a.btn-gcolor(href="#") View more
+  //- product
+  section.product-brown
+    .container
+      .row
+        .col-md-6
+          .row
+            .inner
+              .title-wrap
+                h2.title BLEND POWDER
+                h4.title Han Coffee Standard
+                img(src="images/seperator-brown.png")
+              .desc
+                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              .text-center
+                a.btn-gcolor(href="#") View more
+        .col-md-6
+          .img-product-wrap
+            img(src="images/gp.png")
+append footer
+append script
+  script.
+    $('.slide-detail').slick({
+      autoplay: true,
+      speed: 800,
+      dots: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: true,
+    }).slickAnimation();
+
+    $('.btn-next-section').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#next-section").offset().top
+    }, 1000);
+    })

@@ -24,3 +24,15 @@ legend {
   -webkit-padding-start: 0;
   -webkit-padding-end: 0;
 }
+
+body {
+  font-size: 14px;
+  color: $fcolor;
+  font-family: $sfont;
+}
+
+@media screen and(min-width:1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}

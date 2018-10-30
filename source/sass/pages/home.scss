@@ -1,0 +1,259 @@
+@import '../abstracts/variables.scss';
+// home
+// top
+.top-section {
+  height: calc(100vh - 110px);
+
+  &.hbb {
+    position: relative;
+    
+    .bgb {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 2;
+    }
+
+    .btn-next-section {
+      z-index: 3;
+      position: absolute;
+      bottom: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 44px;
+      height: 70px;
+      cursor: pointer;
+    }
+  }
+
+  .slide {
+    .item-slide {
+      height: calc(100vh - 110px);
+  
+      .content {
+        height: calc(100vh - 110px);
+        padding-top: 60px;
+        padding-bottom: 60px;
+      }
+    }
+  }
+  
+  @media (max-width: 1440px) {
+    &.hbb {
+      .btn-next-section {
+        bottom: 20px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    height: auto;
+
+    &.hbb {
+      .btn-next-section {
+        bottom: 30px;
+      }
+    }
+
+    .slide {
+      .item-slide {
+        min-height: calc(100vh - 110px);
+        height: 100%;
+    
+        .content {
+          min-height: calc(100vh - 110px);
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    &.hbb .btn-next-section {
+      bottom: 5px;
+      width: 30px;
+    }
+
+    .slide {
+      .item-slide {
+        height: auto;
+    
+        .content {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// our-coffee
+.our-coffee {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .desc {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .product-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .item-product {
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  @media(max-width: 992px) {
+    .product-wrap {
+      flex-wrap: wrap;
+
+      .item-product {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// office-coffee
+.office-coffee {
+  min-height: 100vh;
+  background-image: url('../images/bg-01.png');
+  background-size: cover;
+  
+  &.htb {
+    position: relative;
+    
+    .bgt {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .inner {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+}
+
+// connect
+.connect {
+  background-color: $scolor;
+  padding-top: 100px;
+  padding-bottom: 140px;
+
+  &.hbb {
+    position: relative;
+    
+    .bgb {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+      z-index: 2;
+    }
+  }
+
+  .desc {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .list-social {
+    width: 100%;
+    max-width: 460px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+
+    li {
+      display: inline-block;
+
+      img {
+        width: 70px;
+      }
+    }
+  }
+}
+
+// blog
+.blog {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .desc {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .blog-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 35px;
+
+    .item-blog {
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  .more-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media(max-width: 992px) {
+    .blog-wrap {
+      flex-wrap: wrap;
+
+      .item-blog {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}

@@ -1,0 +1,257 @@
+@import '../abstracts/variables.scss';
+// story
+
+.slide-story {
+  .content {
+    &.full {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+
+      .title {
+        letter-spacing: 4px;
+      }
+    }
+  }
+}
+
+// qt product
+.qt-product {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 0;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .qt-product-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+
+    & > .qt-product {
+      background: transparent;
+      padding-top: 0;
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  .qt-product {
+    margin-bottom: 15px;
+    
+    .img-wrap {
+      margin-bottom: 30px;
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  
+    .desc-product {
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  
+      h3 {
+        font-size: 18px;
+        line-height: 26px;
+        color: #462e1f;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: normal;
+      }
+  
+      p {
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .qt-product-wrap {
+      display: block;
+
+      & > .qt-product {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// toi-tay-nguoi-dung
+.ttnd {
+  padding: 100px 0 80px 0;
+
+  &.htb {
+    position: relative;
+    
+    .bgt {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .ttnd-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    & > .ttnd-item {
+      background: transparent;
+      padding-top: 0;
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  .ttnd-item {
+    margin-bottom: 15px;
+    
+    .img-wrap {
+      margin-bottom: 30px;
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  
+    .desc-ttnd {
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  
+      h3 {
+        font-size: 18px;
+        line-height: 26px;
+        color: #462e1f;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: normal;
+      }
+  
+      p {
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .ttnd-wrap {
+      display: block;
+
+      & > .ttnd-item {
+        width: 100%;
+      }
+    }
+  }
+}
+
+// dao tao coffee
+.dt-coffee {
+  height: 100vh;
+  background-image: url('../images/bg-03.png');
+  background-size: cover;
+
+  .inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+// brand
+.other-brand {
+  background-color: #fff;
+  padding-top: 150px;
+  padding-bottom: 130px;
+
+  &.htb {
+    position: relative;
+    
+    // .bgt {
+    //   position: absolute;
+    //   width: 100%;
+    //   top: 0;
+    //   z-index: 2;
+    // }
+  }
+
+  .bit-center {
+    position: absolute;
+    width: 100%;
+    max-width: 460px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 120px;
+  }
+
+  .desc {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .other-brand-wrap {
+    margin-top: 30px;
+    width: 100%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+
+    .item-brand {
+      width: calc(50% - 50px);
+
+      .img-wrap {
+
+      }
+
+      .desc-other-brand {
+        font-size: 20px;
+        color: $scolor;
+        line-height: 28px;
+        padding: 20px;
+        text-align: center;
+
+        p {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  @media(max-width: 992px) {
+    .other-brand-wrap {
+      flex-wrap: wrap;
+
+      .item-brand {
+        width: 100%;
+      }
+    }
+  }
+}

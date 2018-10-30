@@ -1,0 +1,124 @@
+@import '../abstracts/variables.scss';
+// how it work
+.how-it-work {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 0;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .how-it-work-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    .how-it-work-item {
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  .how-it-work-item {
+    margin-bottom: 15px;
+    
+    .img-wrap {
+      margin-bottom: 30px;
+      display: block;
+      width: 100%;
+
+      img {
+        width: 100%;
+      }
+    }
+  
+    .desc-product {
+      max-width: 340px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+  
+      h3 {
+        font-size: 18px;
+        line-height: 26px;
+        color: #462e1f;
+        margin-bottom: 20px;
+        display: block;
+        font-weight: normal;
+      }
+  
+      p {
+        line-height: 24px;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+// product bg white
+.product-white {
+  height: 100vh;
+  background-color: white;
+  
+  &.htb {
+    position: relative;
+    
+    .bgt {
+      position: absolute;
+      width: 100%;
+      top: 0;
+      z-index: 2;
+    }
+  }
+
+  .inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 50px;
+  }
+
+  .img-product-wrap {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-right: 50px;
+
+    img {
+      
+    }
+  }
+}
+
+.product-brown {
+  height: 100vh;
+  background-color: $pcolor;
+  
+  .inner {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 50px;
+  }
+
+  .img-product-wrap {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding-left: 50px;
+  }
+}

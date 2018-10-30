@@ -9,14 +9,124 @@ html
     block head
   body
     block header
-
+      header.header
+        .container
+          .row
+            .inner-header
+              .left
+                .logo
+                  img(src="images/logo.png")
+              .right
+                .top
+                  .search
+                    .inner
+                      input(type="text", placeholder="Search")
+                      button
+                        img(src="images/icon-search.png")
+                  .dropdown.show.lang
+                    a#dropdownMenuLink.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                      img.flag(src="images/icon-vn.png")
+                      span Tiếng Việt
+                      img(src="images/icon-down.png")
+                    .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                      a.dropdown-item(href='#') ENGLISH
+                      a.dropdown-item(href='#') JAPANESE
+                      a.dropdown-item(href='#') CHINESE
+                .bottom
+                  nav.main-nav
+                    ul
+                      li
+                        a(href="#") Our Story
+                      li
+                        a(href="#") Our Coffee
+                      li
+                        a(href="#") Coffee spaces
+                      li
+                        a(href="#") Our Office
+                      li
+                        a(href="#") Our Services
+                      li
+                        a(href="#") Store
+                      li
+                        a(href="#") Partners
+                      li
+                        a(href="#") Contact
     block content
-
     block footer
-
+      footer.footer
+        .top
+          .container
+            .row.inner
+              .title-wrap.white
+                h2.title CONTACT US
+                img(src="images/seperator-white.png")
+              .footer-block
+                .footer-link
+                  h4 EXPLORE
+                  ul
+                    li
+                      a(href="#") Home
+                    li
+                      a(href="#") About Us
+                    li
+                      a(href="#") Our Story
+                    li
+                      a(href="#") Coffee
+                    li
+                      a(href="#") Spaces
+                  ul
+                    li
+                      a(href="#") Office
+                    li
+                      a(href="#") Our Services
+                    li
+                      a(href="#") Store
+                    li
+                      a(href="#") Partners
+                    li
+                      a(href="#") Contact
+                .footer-contact
+                  h4 INFORMATION
+                  .item
+                    img(src="images/icon-maker.png")
+                    p Tầng 16, tòa nhà 319 Bộ Quốc Phòng 63 Lê Văn Lương, Hà Nội.
+                  .item
+                    img(src="images/icon-phone.png")
+                    p (024) 3211 5577
+                  .item
+                    img(src="images/icon-mail.png")
+                    p contact@idd.vn
+                .footer-sub
+                  h4 SUBCRIBE
+                  p News as fresh as our coffee
+                  .sub
+                    input(type="text", placeholder="Your email address")
+                    button
+                      img(src="images/icon-mail.png")
+        .bot
+          .container
+            .row
+              .inner
+                p Copyright © Han coffee  |   Term & Policies
+                .logo
+                  img(src="images/logo-white.png")
+                ul.list-social
+                  li
+                    a(href="#")
+                      img(src="images/icon-face.png")
+                  li
+                    a(href="#")
+                      img(src="images/icon-g.png")
+                  li
+                    a(href="#")
+                      img(src="images/icon-in.png")
+                  li
+                    a(href="#")
+                      img(src="images/icon-t.png")
     block script
       script(src='js/extention/jquery-3.3.1.min.js')
-      script(src='js/extention/bootstrap.min.js')
       script(src='js/extention/popper.js')
+      script(src='js/extention/bootstrap.min.js')
       script(src='js/extention/slick.min.js')
+      script(src='js/extention/slick-animation.min.js')
     

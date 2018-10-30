@@ -1,0 +1,210 @@
+html
+  head
+    meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    link(href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i,900,900i" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet")
+    link(href="css/main.css" rel="stylesheet")
+  body
+    header.header
+      .container
+        .row
+          .inner-header
+            .left
+              .logo
+                img(src="images/logo.png")
+            .right
+              .top
+                .search
+                  .inner
+                    input(type="text", placeholder="Search")
+                    button
+                      img(src="images/icon-search.png")
+                a(href="#").cart
+                  img(src="images/icon-cart-a.png")
+                .dropdown.show.lang
+                  a#dropdownMenuLink.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+                    img.flag(src="images/icon-vn.png")
+                    span Tiếng Việt
+                    img(src="images/icon-down.png")
+                  .dropdown-menu(aria-labelledby='dropdownMenuLink')
+                    a.dropdown-item(href='#') ENGLISH
+                    a.dropdown-item(href='#') JAPANESE
+                    a.dropdown-item(href='#') CHINESE
+              .bottom
+                nav.main-nav
+                  ul
+                    li
+                      a(href="#") Our Story
+                    li
+                      a(href="#") Our Coffee
+                    li
+                      a(href="#") Coffee spaces
+                    li
+                      a(href="#") Our Office
+                    li
+                      a(href="#") Our Services
+                    li
+                      a(href="#") Store
+                    li
+                      a(href="#") Partners
+                    li
+                      a(href="#") Contact
+    //- detail
+    section.product-detail
+      .container
+        .row
+          .inner
+            .col-lg-6
+              .img-wrap
+                img(src="https://via.placeholder.com/195x384")
+            .col-lg-6
+              .detail-info
+                p.code ITEM CODE: B001
+                h4.name ARABICA BEANS
+                p.type Han Coffee Standard
+                p.price Price
+                  span.num 99,000 ₫
+                p.desc-dp Juicy tropical and citrus fruits with a buttery sugar cane sweetness, silky mouth feel and a crisp finish.
+                .desc-p
+                  .item
+                    .inner
+                      img(src="images/icon-map-a.png")
+                      .text
+                        span.tit Nguồn gốc
+                        p.content Di Linh - Lâm Đồng
+                  .item
+                    .inner
+                      img(src="images/icon-m-a.png")
+                      .text
+                        span.tit Độ cao
+                        p.content 700 - 800m
+                  .item
+                    .inner
+                      img(src="images/icon-c-a.png")
+                      .text
+                        span.tit Loại hạt
+                        p.content Fine Robusta Blend
+                  .item
+                    .inner
+                      img(src="images/icon-w-a.png")
+                      .text
+                        span.tit Trọng lượng
+                        p.content 250g
+                .quantity 
+                  span Quantity
+                  .input-q
+                    button
+                      img(src="images/icon-min-a.png")
+                    input(type="text", placeholder="0")
+                    button
+                      img(src="images/icon-p-a.png")
+                a.btn-gcolor(href="#") ADD TO CART
+    //- relate product
+    section.relate-product
+      .container
+        .row
+          .title-wrap
+            h2.title You may also like
+            img(src="images/seperator-brown.png")
+          .inner
+            a.relate-product(href="#")
+              .img-wrap
+                img(src="https://via.placeholder.com/70x138")
+              .info
+                h4.name ARABICA BEANS
+                span.price 99,000 ₫
+            a.relate-product(href="#")
+              .img-wrap
+                img(src="https://via.placeholder.com/70x138")
+              .info
+                h4.name ARABICA BEANS
+                span.price 99,000 ₫
+            a.relate-product(href="#")
+              .img-wrap
+                img(src="https://via.placeholder.com/70x138")
+              .info
+                h4.name ARABICA BEANS
+                span.price 99,000 ₫
+            a.relate-product(href="#")
+              .img-wrap
+                img(src="https://via.placeholder.com/70x138")
+              .info
+                h4.name ARABICA BEANS
+                span.price 99,000 ₫
+    //- footer
+    footer.footer
+      .top
+        .container
+          .row.inner
+            .title-wrap.white
+              h2.title CONTACT US
+              img(src="images/seperator-white.png")
+            .footer-block
+              .footer-link
+                h4 EXPLORE
+                ul
+                  li
+                    a(href="#") Home
+                  li
+                    a(href="#") About Us
+                  li
+                    a(href="#") Our Story
+                  li
+                    a(href="#") Coffee
+                  li
+                    a(href="#") Spaces
+                ul
+                  li
+                    a(href="#") Office
+                  li
+                    a(href="#") Our Services
+                  li
+                    a(href="#") Store
+                  li
+                    a(href="#") Partners
+                  li
+                    a(href="#") Contact
+              .footer-contact
+                h4 INFORMATION
+                .item
+                  img(src="images/icon-maker.png")
+                  p Tầng 16, tòa nhà 319 Bộ Quốc Phòng 63 Lê Văn Lương, Hà Nội.
+                .item
+                  img(src="images/icon-phone.png")
+                  p (024) 3211 5577
+                .item
+                  img(src="images/icon-mail.png")
+                  p contact@idd.vn
+              .footer-sub
+                h4 SUBCRIBE
+                p News as fresh as our coffee
+                .sub
+                  input(type="text", placeholder="Your email address")
+                  button
+                    img(src="images/icon-mail.png")
+      .bot
+        .container
+          .row
+            .inner
+              p Copyright © Han coffee  |   Term & Policies
+              .logo
+                img(src="images/logo-white.png")
+              ul.list-social
+                li
+                  a(href="#")
+                    img(src="images/icon-face.png")
+                li
+                  a(href="#")
+                    img(src="images/icon-g.png")
+                li
+                  a(href="#")
+                    img(src="images/icon-in.png")
+                li
+                  a(href="#")
+                    img(src="images/icon-t.png")
+    block script
+      script(src='js/extention/jquery-3.3.1.min.js')
+      script(src='js/extention/popper.js')
+      script(src='js/extention/bootstrap.min.js')

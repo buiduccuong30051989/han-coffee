@@ -1,23 +1,242 @@
 extends modules/layout/layout.pug
-block head
-block header
-  header.header
-    .left
-      .logo
-        img(src="images/logo.png")
-    .right
-      .top
-        .dropdown.show
-          a#dropdownMenuLink.btn.btn-secondary.dropdown-toggle(href='#', role='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
-            | Dropdown link
-          .dropdown-menu(aria-labelledby='dropdownMenuLink')
-            a.dropdown-item(href='#') Action
-            a.dropdown-item(href='#') Another action
-            a.dropdown-item(href='#') Something else here
-block content
-  h2 tao la content
-block footer
+append head
+append header
+append content
+  //- slide
+  section.top-section.hbb
+    img.bgb(src="images/bg-brown-bot.png")
+    .slide.slide-home
+      .item-slide(style='background-image: url(images/s01.png)')
+        .container
+          .row
+            .col-lg-6.offset-lg-6
+              .row
+                .content
+                  .title-wrap.white
+                    h2.title YOUR STORY
+                    h4.title Heading line 1
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+      .item-slide(style='background-image: url(images/s02.png)')
+        .container
+          .row
+            .col-lg-6.offset-lg-6
+              .row
+                .content
+                  .title-wrap.white
+                    h2.title YOUR STORY
+                    h4.title Heading line 2
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+    button.btn-next-section
+      img(src="images/icon-next-section.png")
+  //- our coffee
+  section#next-section.our-coffee
+    .bit-left
+      img(src="images/bit-left.png")
+    .bit-right
+      img(src="images/bit-right.png")
+    .container
+      .row
+        .title-wrap
+          h2.title OUR COFFEE
+          h4.title Heading line 2
+          img(src="images/seperator-brown.png")
+        .desc.text-center
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .product-wrap
+          .item-product
+            a(href="#").img-wrap
+              img(src="images/product-01.png")
+            .desc-product
+              h3 
+                a(href="#") Standard
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              a.btn-gcolor(href="#") View more
+          .item-product
+            a(href="#").img-wrap
+              img(src="images/product-01.png")
+            .desc-product
+              h3 
+                a(href="#") Standard
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              a.btn-gcolor(href="#") View more
+          .item-product
+            a(href="#").img-wrap
+              img(src="images/product-01.png")
+            .desc-product
+              h3 
+                a(href="#") Standard
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+              a.btn-gcolor(href="#") View more
+  //- office coffee
+  section.office-coffee.htb
+    img.bgt(src="images/bg-brown-top.png")
+    .container
+      .row
+        .col-lg-6
+          .row
+            .inner
+              .title-wrap
+                h2.title OUR COFFEE
+                h4.title Heading line 2
+                img(src="images/seperator-brown.png")
+              .desc
+                p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+              .text-center
+                a.btn-gcolor(href="#") View more
+  //- coffee space
+  section.coffee-space
+    .slide.slide-coffee-space
+      .item-slide(style='background-image: url(images/bg-02.png)')
+        .container
+          .row
+            .col-lg-6.offset-lg-6
+              .row
+                .content
+                  .title-wrap.white
+                    h2.title COFFEE SPACE
+                    h4.title Heading line 1
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+      .item-slide(style='background-image: url(images/s01.png)')
+        .container
+          .row
+            .col-lg-6.offset-lg-6
+              .row
+                .content
+                  .title-wrap.white
+                    h2.title COFFEE SPACE
+                    h4.title Heading line 2
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+  //- connect with us
+  section.connect.hbb
+    img.bgb(src="images/bg-brown-bot.png")
+    .container
+      .row
+        .title-wrap.white
+          h2.title OUR COFFEE
+          img(src="images/seperator-white.png")
+        .desc.white
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution 
+        ul.list-social
+          li
+            a(href="#")
+              img(src="images/icon-face.png")
+          li
+            a(href="#")
+              img(src="images/icon-g.png")
+          li
+            a(href="#")
+              img(src="images/icon-in.png")
+          li
+            a(href="#")
+              img(src="images/icon-t.png")
+  //- blog
+  section.blog
+    .bit-left
+      img(src="images/bit-left.png")
+    .bit-right
+      img(src="images/bit-right.png")
+    .container
+      .row
+        .title-wrap
+          h2.title LATEST BLOG
+          h4.title Heading line 2
+          img(src="images/seperator-brown.png")
+        .desc
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .blog-wrap
+          article.item-blog
+            a(href="#").img-wrap
+              img(src="images/blog-01.png")
+            .desc-blog
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+          article.item-blog
+            a(href="#").img-wrap
+              img(src="images/blog-02.png")
+            .desc-blog
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+          article.item-blog
+            a(href="#").img-wrap
+              img(src="images/blog-01.png")
+            .desc-blog
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+        .more-wrap
+          a.btn-gcolor(href="#") View more
+  //- other brand
+  section.other-brand.htb
+    img.bgt(src="images/bg-brown-top.png")
+    .bit-center
+      img(src="images/bit-center.png")
+    .container
+      .row
+        .title-wrap
+          h2.title OUR OTHER BRANDS 
+          h4.title Heading line 2
+          img(src="images/seperator-brown.png")
+        .desc
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .other-brand-wrap
+          a(href="#").item-brand
+            .img-wrap
+              img(src="images/other-brand.png")
+            .desc-other-brand
+              p Bánh trung thu
+              p HANMOONCAKE
+          a(href="#").item-brand
+            .img-wrap
+              img(src="https://via.placeholder.com/1500x900/f9f1ed")
+            .desc-other-brand
+              p Coming soon
+append footer
+append script
+  script.
+    $('.slide-home').slick({
+      autoplay: true,
+      speed: 800,
+      dots: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: true,
+    }).slickAnimation();
 
-block script
-  h1 cuong
-  
+    $('.slide-coffee-space').slick({
+      autoplay: true,
+      speed: 800,
+      dots: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: true,
+    }).slickAnimation();
+
+    $('.btn-next-section').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#next-section").offset().top
+    }, 1000);
+    })

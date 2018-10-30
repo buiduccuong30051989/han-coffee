@@ -1,0 +1,181 @@
+extends modules/layout/layout.pug
+append head
+append header
+append content
+  //- grid images
+  section.grid-images
+    .inner
+      .left
+        img(src="https://via.placeholder.com/1160x760")
+      .right
+        .top
+          img(src="https://via.placeholder.com/756x378")
+        .bot
+          .left
+            img(src="https://via.placeholder.com/376x378")
+          .right
+            img(src="https://via.placeholder.com/376x378")
+  section.category-p
+    .container
+      .row
+        .inner
+          ul
+            li
+              a(href="#") Sweets
+            li
+              a(href="#") Fruits
+            li
+              a(href="#") Drinks
+            li
+              a(href="#") Spices/Herbs/Nuts
+            li
+              a(href="#") Earthy
+  //- products list
+  section.products-list
+    .container
+      .row
+        .title-wrap
+          h2.title HAN COFFEE STANDARD
+          img(src="images/seperator-brown.png")
+        .desc.text-center
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .products-list-wrap
+          .product
+            .img-wrap
+              img(src="images/product-01.png")
+              .info
+                h4.name ARABICA BEANS
+                span.price 99,000 ₫
+              a(href="#").add-to-cart
+                span Add to cart
+            .desc-p
+              .item
+                .inner
+                  img(src="images/icon-map-a.png")
+                  .text
+                    span.tit Nguồn gốc
+                    p.content Di Linh - Lâm Đồng
+              .item
+                .inner
+                  img(src="images/icon-m-a.png")
+                  .text
+                    span.tit Độ cao
+                    p.content 700 - 800m
+              .item
+                .inner
+                  img(src="images/icon-c-a.png")
+                  .text
+                    span.tit Loại hạt
+                    p.content Fine Robusta Blend
+              .item
+                .inner
+                  img(src="images/icon-w-a.png")
+                  .text
+                    span.tit Trọng lượng
+                    p.content 250g
+          .product
+            .img-wrap
+              img(src="images/product-01.png")
+              .info
+                h4.name ROBUSTA BEANS
+                span.price 99,000 ₫
+              a(href="#").add-to-cart
+                span Add to cart
+            .desc-p
+              .item
+                .inner
+                  img(src="images/icon-map-a.png")
+                  .text
+                    span.tit Nguồn gốc
+                    p.content Di Linh - Lâm Đồng
+              .item
+                .inner
+                  img(src="images/icon-m-a.png")
+                  .text
+                    span.tit Độ cao
+                    p.content 700 - 800m
+              .item
+                .inner
+                  img(src="images/icon-c-a.png")
+                  .text
+                    span.tit Loại hạt
+                    p.content Fine Robusta Blend
+              .item
+                .inner
+                  img(src="images/icon-w-a.png")
+                  .text
+                    span.tit Trọng lượng
+                    p.content 250g
+          .product
+            .img-wrap
+              img(src="images/product-01.png")
+              .info
+                h4.name ROBUSTA POWDER
+                span.price 99,000 ₫
+              a(href="#").add-to-cart
+                span Add to cart
+            .desc-p
+              .item
+                .inner
+                  img(src="images/icon-map-a.png")
+                  .text
+                    span.tit Nguồn gốc
+                    p.content Di Linh - Lâm Đồng
+              .item
+                .inner
+                  img(src="images/icon-m-a.png")
+                  .text
+                    span.tit Độ cao
+                    p.content 700 - 800m
+              .item
+                .inner
+                  img(src="images/icon-c-a.png")
+                  .text
+                    span.tit Loại hạt
+                    p.content Fine Robusta Blend
+              .item
+                .inner
+                  img(src="images/icon-w-a.png")
+                  .text
+                    span.tit Trọng lượng
+                    p.content 250g
+          .product
+            .img-wrap
+              img(src="images/product-01.png")
+              .info
+                h4.name BLEND POWDER
+                span.price 99,000 ₫
+              a(href="#").add-to-cart
+                span Add to cart
+            .desc-p
+              .item
+                .inner
+                  img(src="images/icon-map-a.png")
+                  .text
+                    span.tit Nguồn gốc
+                    p.content Di Linh - Lâm Đồng
+              .item
+                .inner
+                  img(src="images/icon-m-a.png")
+                  .text
+                    span.tit Độ cao
+                    p.content 700 - 800m
+              .item
+                .inner
+                  img(src="images/icon-c-a.png")
+                  .text
+                    span.tit Loại hạt
+                    p.content Fine Robusta Blend
+              .item
+                .inner
+                  img(src="images/icon-w-a.png")
+                  .text
+                    span.tit Trọng lượng
+                    p.content 250g
+          .product.income
+            .bit-left
+              img(src="images/bit-left.png")
+            .bit-right
+              img(src="images/bit-right.png")
+            span Coming Soon
+append footer

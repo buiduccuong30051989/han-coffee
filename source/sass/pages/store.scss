@@ -1,0 +1,234 @@
+@import '../abstracts/variables.scss';
+// grid images
+  .grid-images {
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .inner {
+      display: flex;
+
+      .left {
+        margin-right: 2px;
+      }
+
+      .right {
+        margin-left: 2px;
+
+        .top {
+          margin-bottom: 2px;
+        }
+
+        .bot {
+          display: flex;
+          margin-top: 2px;
+
+          .left {
+            margin-right: 2px;
+          }
+
+          .right {
+            margin-left: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  .category-p {
+    background-color: $scolor;
+    height: 80px;
+    padding: 0 15px;
+    overflow: hidden;
+
+    .inner {
+      overflow-x: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      width: 100%;
+
+      ul {
+        list-style: none;
+        white-space: nowrap;
+        text-align: center;
+        min-width: 100%;
+
+        li {
+          display: inline-block;
+          margin: 0 20px;
+
+          a {
+            display: block;
+            border-radius: 19px;
+            color: white;
+            background-color: rgba(0,0,0,.3);
+            line-height: 38px;
+            padding: 0 30px;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .products-list {
+    padding-top: 90px;
+
+    .desc {
+      max-width: 960px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .products-list-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-between;
+
+      .product {
+        background-color: $pcolor;
+        margin-bottom: 33px;
+        padding-bottom: 18px;
+        width: calc(33.3333% - 20px);
+
+        .img-wrap {
+          position: relative;
+          text-align: center;
+          padding: 42px 15px 52px 15px;
+          
+          img {
+            max-width: 90px;
+            width: 100%;
+            margin-bottom: 30px;
+          }
+
+          .info {
+            .name {
+              font-size: 18px;
+              letter-spacing: 1.5px;
+              font-weight: normal;
+              color: $mcolor;
+            }
+
+            .price {
+              font-size: 18px;
+            }
+          }
+
+          .add-to-cart {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            line-height: 44px;
+            color: white;
+            background-color: rgba(103, 51, 18, 0.8);
+            opacity: 0;
+            transition: .3s ease-in-out;
+          }
+        }
+
+        .desc-p {
+          padding: 0 1px;
+          display: flex;
+          flex-wrap: wrap;
+          width: 100%;
+
+          .item {
+            padding: 1px;
+            width: 50%;
+            min-width: 50%;
+            max-width: 50%;
+
+            .inner {
+              display: flex;
+              width: 100%;
+              min-height: 60px;
+              background-color: white;
+              position: relative;
+
+              img {
+                width: 24px;
+                position: absolute;
+                top: 50%;
+                left: 10px;
+                transform: translateY(-50%);
+              }
+
+              .text {
+                padding-left: 44px;
+                width: 100%;
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+
+                .tit {
+                  display: block;
+                  font-size: 12px;
+                  width: 100%;
+                }
+
+                .content {
+                  margin: 0;
+                  display: block;
+                  width: 100%;
+                }
+              }
+            }
+          }
+        }
+
+        &.income {
+          margin-left: 30px;
+          margin-right: auto;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .bit-left {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 153px;
+          }
+
+          .bit-right {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 118px;
+          }
+
+          span {
+            font-size: 24px;
+            color: $scolor;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+          }
+        }
+
+        &:hover {
+          .img-wrap .add-to-cart {
+            opacity: 1;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      .products-list-wrap {
+        .product {
+          width: 100%;
+
+          &.income {
+            min-height: 412px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
