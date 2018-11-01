@@ -1,0 +1,61 @@
+@import '../abstracts/variables.scss';
+// how it work
+.space-list {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 0;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .space-list-wrap {
+
+  }
+
+  .space-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .img-wrap {
+      width: 65%;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    .desc-product {
+      width: 35%;
+    }
+
+    &:nth-of-type(odd) {
+      .desc-product {
+        text-align: right;
+      }
+    }
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+
+      .desc-product {
+        text-align: left;
+      }
+    }
+  }
+}

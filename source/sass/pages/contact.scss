@@ -1,0 +1,46 @@
+@import '../abstracts/variables.scss';
+.contact {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .contact-wrap {
+    h3 {
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .form-control {
+      border-radius: 0;
+      border: 2px solid $ccolor;
+    }
+
+    .btn-cmain {
+      min-width: 120px;
+      color: white;
+      border-radius: 0;
+      background-color: $ccolor;
+      font-weight: bold;
+    }
+  }
+}

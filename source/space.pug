@@ -1,0 +1,92 @@
+extends modules/layout/layout.pug
+append head
+append header
+append content
+  //- slide
+  section.top-section.hbb
+    img.bgb(src="images/bg-brown-bot.png")
+    .slide.slide-story
+      .item-slide(style='background-image: url(images/ttnd-01.jpg)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title VÙNG TRỒNG NGUYÊN LIỆU
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+      .item-slide(style='background-image: url(images/ttnd-03.jpg)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title VÙNG TRỒNG NGUYÊN LIỆU
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+    button.btn-next-section
+      img(src="images/icon-next-section.png")
+  //- products list
+  section.space-list
+    .bit-left
+      img(src="images/bit-left.png")
+    .bit-right
+      img(src="images/bit-right.png")
+    .container
+      .row
+        .title-wrap
+          h2.title CHUỖI QUÁN HANCOFFEE
+          img(src="images/seperator-brown.png")
+        .desc.text-center
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .space-list-wrap
+          .space-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x100")
+            .desc-product
+              h3  Espresso
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+          .space-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x100")
+            .desc-product
+              h3  Espresso
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. 
+          .space-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x100")
+            .desc-product
+              h3  Filter
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+          .space-item
+            a(href="#").img-wrap
+              img(src="https://via.placeholder.com/275x100")
+            .desc-product
+              h3  Cafetiere
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+    
+append footer
+append script
+  script.
+    $('.slide-story').slick({
+      autoplay: true,
+      speed: 800,
+      dots: false,
+      fade: true,
+      cssEase: 'linear',
+      arrows: true,
+    }).slickAnimation();
+
+    $('.btn-next-section').on('click', function() {
+      $('html, body').animate({
+        scrollTop: $("#next-section").offset().top
+    }, 1000);
+    })

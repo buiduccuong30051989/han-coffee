@@ -1,0 +1,101 @@
+@import '../abstracts/variables.scss';
+// blog
+.dtkd {
+  position: relative;
+  background-image: url('../images/bit-brown.png');
+  background-size: cover;
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  .bit-left {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    width: 18.5%;
+  }
+
+  .bit-right {
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+    width: 14.68%;
+  }
+
+  .desc {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .dtkd-wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 3;
+    margin-bottom: 35px;
+
+    .item-dtkd {
+      width: calc(33.3333% - 40px);
+    }
+  }
+
+  .more-wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  @media(max-width: 992px) {
+    .dtkd-wrap {
+      flex-wrap: wrap;
+
+      .item-dtkd {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+}
+
+.item-dtkd {
+  background-color: white;
+
+  .img-wrap {
+    display: block;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .desc-dtkd {
+    padding: 22px 20px;
+
+    h3 a {
+      font-size: 18px;
+      line-height: 26px;
+      color: $scolor;
+      margin-bottom: 15px;
+    }
+
+    span {
+      font-size: 12px;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #000;
+      margin-bottom: 20px;
+    }
+
+    .read-more {
+      color: #000;
+    }
+  }
+}
+
+.cdt {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}

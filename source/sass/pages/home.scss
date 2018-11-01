@@ -86,54 +86,6 @@
   }
 }
 
-// our-coffee
-.our-coffee {
-  position: relative;
-  background-image: url('../images/bit-brown.png');
-  background-size: cover;
-  padding-top: 100px;
-  padding-bottom: 100px;
-
-  .bit-left {
-    position: absolute;
-    top: 114px;
-    left: 0;
-    width: 18.5%;
-  }
-
-  .bit-right {
-    position: absolute;
-    right: 0;
-    bottom: 142px;
-    width: 14.68%;
-  }
-
-  .desc {
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .product-wrap {
-    display: flex;
-    justify-content: space-between;
-
-    .item-product {
-      width: calc(33.3333% - 40px);
-    }
-  }
-
-  @media(max-width: 992px) {
-    .product-wrap {
-      flex-wrap: wrap;
-
-      .item-product {
-        width: 100%;
-      }
-    }
-  }
-}
-
 // office-coffee
 .office-coffee {
   min-height: 100vh;

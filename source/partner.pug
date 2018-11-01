@@ -1,0 +1,93 @@
+extends modules/layout/layout.pug
+append head
+append header
+append content
+  //- slide
+  section.top-section.hbb
+    img.bgb(src="images/bg-brown-bot.png")
+    .slide.slide-story
+      .item-slide(style='background-image: url(images/s02.png)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title ĐỐI TÁC
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+      .item-slide(style='background-image: url(images/s01.png)')
+        .container
+          .row
+            .col-md-12
+              .row
+                .content.full
+                  .title-wrap.white
+                    h2.title ĐỐI TÁC
+                    img(src="images/seperator-white.png")
+                  .desc.white
+                    p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+                  .text-center
+                    a.btn-gcolor(href="#") View more
+    button.btn-next-section
+      img(src="images/icon-next-section.png")
+  //- doi tac kinh doanh
+  section.dtkd
+    .bit-left
+      img(src="images/bit-left.png")
+    .bit-right
+      img(src="images/bit-right.png")
+    .container
+      .row
+        .title-wrap
+          h2.title HỢP TÁC KINH DOANH
+          h4.title Heading line 2
+          img(src="images/seperator-brown.png")
+        .desc
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .dtkd-wrap
+          article.item-dtkd
+            a(href="#").img-wrap
+              img(src="images/blog-01.png")
+            .desc-dtkd
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+          article.item-dtkd
+            a(href="#").img-wrap
+              img(src="images/blog-02.png")
+            .desc-dtkd
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+          article.item-dtkd
+            a(href="#").img-wrap
+              img(src="images/blog-01.png")
+            .desc-dtkd
+              h3 
+                a(href="#") London buses powered by your used coffee grounds
+              span 07 DECEMBER 2017
+              p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content.
+              a.read-more(href="#") —  Read more
+        .more-wrap
+          a.btn-gcolor(href="#") View more
+  //- cac doi tac
+  section.cdt
+    .container
+      .row
+        .title-wrap
+          h2.title CÁC ĐỐI TÁC
+          h4.title Heading line 2
+          img(src="images/seperator-brown.png")
+        .desc
+          p It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+        .cdt-wrap
+          h1 layout cac doi tac o day
+append footer
